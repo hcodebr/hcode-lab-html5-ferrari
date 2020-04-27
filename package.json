@@ -1,0 +1,19 @@
+{
+  "name": "hcode-lab-html5-ferrari",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hcodebr/hcode-lab-html5-ferrari.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hcodebr/hcode-lab-html5-ferrari/issues"
+  },
+  "homepage": "https://github.com/hcodebr/hcode-lab-html5-ferrari#readme"
+}

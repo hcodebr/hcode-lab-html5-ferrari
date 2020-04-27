@@ -1,0 +1,21 @@
+:root {
+    --black: #000;
+    --white: #FFF;
+    --red: #E32119;
+    --yellow: #FFF100;
+    --green: #00994D;
+    --dark: #343433;
+    --light: #F8F8F8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, div, article, aside, footer, header, main, nav, section, ul, ol {
+    display: flex;
+}
+
+body {
+    margin: 0;
+}
