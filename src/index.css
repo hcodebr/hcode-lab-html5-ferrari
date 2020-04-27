@@ -1,3 +1,5 @@
+@import 'open-sans.css';
+
 :root {
     --black: #000;
     --white: #FFF;
@@ -21,6 +23,9 @@ body, div, article, aside, footer, header, main, nav, section, ul, ol, li, butto
 body {
     margin: 0;
     flex-direction: column;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
 }
 
 header {
