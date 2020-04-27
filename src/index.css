@@ -6,6 +6,7 @@
     --green: #00994D;
     --dark: #343433;
     --light: #F8F8F8;
+    --header: #E5E3DF75;
 }
 
 * {
@@ -20,8 +21,41 @@ body {
     margin: 0;
 }
 
+header {
+    width: 100%;
+    min-height: 80px;
+    position: relative;
+    background-color: var(--header);
+}
+
+header button {
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    padding: 13px;
+    outline: none;
+}
+
+header #logo {
+    position: absolute;
+    left: calc(50vw - 60px);
+    z-index: 2;
+}
+
+header hr {
+    background-image: url('images/bg-italy.svg');
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 20px;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
 @media (min-width: 576px) {
-    
+
 }
 
 @media (min-width: 768px) {
