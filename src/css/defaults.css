@@ -13,3 +13,7 @@ body {
     font-style: normal;
     font-weight: 400;
 }
+
+main {
+    min-height: calc(100vh - 463px);
+}

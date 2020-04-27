@@ -11,7 +11,7 @@ footer {
 
 footer button {
     position: absolute;
-    right: 0;
+    right: 20px;
     background: var(--light);
     color: var(--dark);
     box-shadow: var(--black) 0 3px 6px;
