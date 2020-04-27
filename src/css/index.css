@@ -1,0 +1,25 @@
+@import 'open-sans.css';
+@import 'variables.css';
+@import 'defaults.css';
+@import 'header.css';
+@import 'footer.css';
+
+main {
+    min-height: calc(100vh - 463px);
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 992px) {
+    
+}
+
+@media (min-width: 1200px) {
+    
+}
