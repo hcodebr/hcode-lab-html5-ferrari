@@ -59,3 +59,47 @@
     font-size: 12px;
     color: #CCC;
 }
+
+#home .inspiration {
+    position: relative;
+    padding: 3em 2em;
+    justify-content: flex-end;
+    min-height: 600px;
+}
+#home .inspiration .text {
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    z-index: 2;
+}
+#home .inspiration .text h2 {
+    font-size: 40px;
+    color: #333;
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+#home .inspiration .text p {
+    color: #555;
+    text-align: right;
+    max-width: 75vw;
+    font-size: 24px;
+}
+#home .inspiration .car {
+    position: absolute;
+    background-image: url('/images/photos/ferrari-side.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 684px;
+    height: 427px;
+    z-index: 0;
+    top: 210px;
+    left: -330px;
+}
+#home .inspiration .wheel {
+    background-image: url('/images/photos/ferrari-side.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 684px;
+    height: 427px;
+    z-index: 1;
+}
