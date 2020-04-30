@@ -41,6 +41,9 @@
     margin-top: 1px;
     position: relative;
 }
+#home .gallery figure img {
+    width: 100%;
+}
 #home .gallery figure figcaption {
     position: absolute;
     left: 0;
