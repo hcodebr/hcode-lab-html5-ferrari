@@ -1,4 +1,4 @@
-footer {
+#footer {
     width: 100%;
     min-width: 320px;
     position: relative;
@@ -9,7 +9,7 @@ footer {
     align-items: center;
 }
 
-footer button {
+#footer button {
     position: absolute;
     right: 20px;
     background: var(--light);
@@ -27,41 +27,41 @@ footer button {
     z-index: 1;
 }
 
-footer ul {
+#footer ul {
     flex-direction: column;
     margin: 0;
     padding: 0;
     width: 300px;
 }
 
-footer ul li {
+#footer ul li {
     list-style: none;
     padding: .5em 0;
     font-size: 16px;
 }
 
-footer ul li.title {
+#footer ul li.title {
     font-weight: bold;
     font-size: 20px;
 }
 
-footer .social {
+#footer .social {
     align-items: center;
 }
 
-footer .social a {
+#footer .social a {
     margin-right: 1em;
 }
 
-footer .social img {
+#footer .social img {
     height: 24px;
 }
 
-footer .logo {
+#footer .logo {
     margin: 2em 0;
 }
 
-footer p {
+#footer p {
     text-align: center;
     font-size: 18px;
     font-weight: bold;

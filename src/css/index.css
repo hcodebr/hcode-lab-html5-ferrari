@@ -3,6 +3,7 @@
 @import 'defaults.css';
 @import 'header.css';
 @import 'footer.css';
+@import 'home.css';
 
 @media (min-width: 576px) {
 
