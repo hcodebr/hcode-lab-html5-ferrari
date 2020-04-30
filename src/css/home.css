@@ -17,7 +17,7 @@
     padding: 2em;
 }
 #home header h1 {
-    color: #FFF;
+    color: var(--white);
     font-size: 4em;
     font-weight: bold;
     text-align: right;
@@ -25,10 +25,10 @@
     line-height: 1.25em;
 }
 #home header a {
-    border: #FFF 2px solid;
+    border: var(--white) 2px solid;
     border-radius: 8px;
     padding: 10px 32px;
-    color: #FFF;
+    color: var(--white);
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -57,14 +57,14 @@
 #home .gallery figure figcaption p {
     margin: 0;
     font-size: 12px;
-    color: #CCC;
+    color: var(--grayC);
 }
 
 #home .inspiration {
     position: relative;
     padding: 3em 2em;
     justify-content: flex-end;
-    min-height: 600px;
+    min-height: 640px;
 }
 #home .inspiration .text {
     flex-direction: column;
@@ -74,12 +74,12 @@
 }
 #home .inspiration .text h2 {
     font-size: 40px;
-    color: #333;
+    color: var(--gray3);
     text-transform: uppercase;
     margin: 1em 0;
 }
 #home .inspiration .text p {
-    color: #555;
+    color: var(--gray5);
     text-align: right;
     max-width: 75vw;
     font-size: 24px;
@@ -102,4 +102,21 @@
     width: 684px;
     height: 427px;
     z-index: 1;
+}
+
+#home .know {
+    background-color: var(--light);
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 2em;
+}
+#home .know h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: right;
+    color: var(--gray3);
+    margin: 1em 0;
+}
+#home .know img {
+    width: 194px;
 }

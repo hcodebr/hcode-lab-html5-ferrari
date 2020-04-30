@@ -9,4 +9,8 @@
     --header: #E5E3DF75;
     --white50: #FFFFFF50;
     --black75: rgba(0, 0, 0, .75);
+    --gray3: #333;
+    --gray5: #666;
+    --gray6: #666;
+    --grayC: #CCC;
 }
