@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button {
+body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure {
     display: flex;
 }
 

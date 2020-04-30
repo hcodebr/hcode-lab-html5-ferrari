@@ -1,5 +1,6 @@
 #home {
-    
+    flex-direction: column;
+    margin-top: -80px;
 }
 #home header {
     width: 100%;
@@ -14,7 +15,6 @@
     align-items: flex-end;
     justify-content: flex-end;
     padding: 2em;
-    margin-top: -80px;
 }
 #home header h1 {
     color: #FFF;
@@ -31,4 +31,31 @@
     color: #FFF;
     text-transform: uppercase;
     text-decoration: none;
+}
+#home .gallery {
+    flex-direction: column;
+}
+#home .gallery figure {
+    width: 100%;
+    margin: 0;
+    margin-top: 1px;
+    position: relative;
+}
+#home .gallery figure figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    background-color: var(--black75);
+    color: var(--white);
+    padding: .3em 1em;
+}
+#home .gallery figure figcaption h2 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#home .gallery figure figcaption p {
+    margin: 0;
+    font-size: 12px;
+    color: #CCC;
 }
