@@ -8,10 +8,27 @@
 </head>
 <body>
     <header id="header">
+        <div id="overlay" data-close="menu"></div>
         <a href="/"><img src="images/logo.svg" id="logo" alt="Logo" /></a>
-        <button type="button">
+        <button type="button" id="btn-open">
             <img src="images/menu-black-18dp.svg" alt="menu" />
         </button>
+        <nav class="menu">
+            <div>
+                <button type="button" id="btn-close" data-close="menu">
+                    <img src="images/close-black-18dp.svg" alt="close" />
+                </button>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/nossa-historia.html">Nossa História</a></li>
+                    <li><a href="/galeria.html">Galeria</a></li>
+                    <li><a href="/contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <button type="button" class="btn-register">
+                Registre-se / Login
+            </button>
+        </nav>
         <hr />
     </header>
     <main id="home">
@@ -90,5 +107,6 @@
         <a href="/"><img src="images/ferrari-footer.svg" alt="Logo" class="logo" /></a>
         <p>2020 © Hcode. All rights reserved.</p>
     </footer>
+    <script type="text/javascript" src="javascript/index.js"></script>
 </body>
 </html>

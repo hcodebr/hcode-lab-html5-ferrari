@@ -7,20 +7,66 @@
     z-index: 3;
 }
 
+#header .menu {
+    transition: right .5s ease-in-out;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--white);
+    position: fixed;
+    right: -300px;
+    top: 0;
+    z-index: 4;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#header .menu .btn-register {
+    background-color: var(--green);
+    color: var(--white);
+    margin: 1em;
+    border-radius: 6px;
+    justify-content: center;
+    font-size: 1.1em;
+}
+
+#header .menu ul {
+    margin: 0;
+    margin-top: 208px;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+}
+
+#header .menu ul li {
+    padding: 14px 0;
+    width: 100%;
+    list-style: none;
+    justify-content: center;
+}
+
+#header .menu ul li a {
+    text-decoration: none;
+    color: var(--black75);
+}
+
 #header button {
-    position: absolute;
-    right: 0;
     background: none;
     border: none;
     padding: 13px;
     outline: none;
 }
 
+#btn-open, #btn-close {
+    position: absolute;
+    right: 0;
+}
+
 header #logo {
     position: absolute;
-    left: calc(50vw - 60px);
+    transition: all 1s ease-in-out;
+    right: calc(50vw - 60px);
     top: 15px;
-    z-index: 2;
+    z-index: 5;
 }
 
 header hr {
@@ -33,4 +79,32 @@ header hr {
     bottom: 0;
     z-index: 1;
     border: none;
+}
+
+.open-menu {
+    overflow: hidden;
+}
+
+#overlay {
+    transition: all .5s ease-in-out;
+    display: none;
+}
+.open-menu #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black75);
+    z-index: 4;
+    display: flex;
+}
+
+.open-menu #header .menu {
+    right: 0px;
+}
+
+.open-menu #header #logo {
+    left: initial;
+    right: 87px;
 }
