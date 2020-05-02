@@ -9,6 +9,7 @@
 @import 'login.css';
 @import 'register.css';
 @import 'gallery.css';
+@import 'error.css';
 
 @media (min-width: 576px) {
 

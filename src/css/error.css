@@ -1,0 +1,29 @@
+#error.page header {
+    margin: 0;
+    margin-top: 120px;
+    padding: 0 3em;
+    height: initial;
+}
+
+#error.page header h1 {
+    margin: 0;
+    color: var(--grayC);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+#error.page header h1 span {
+    color: var(--red);
+}
+
+#error.page p {
+    padding: 0 3em;
+    font-size: 20px;
+    color: var(--gray5);
+}
+
+#error.page img {
+    width: 100%;
+    margin-bottom: 3em;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari</title>
+    <link type="text/css" href="css/index.css" rel="stylesheet" />
+</head>
+<body>
+    <header id="header">
+        <div id="overlay" data-close="menu"></div>
+        <a href="/"><img src="images/logo.svg" id="logo" alt="Logo" /></a>
+        <button type="button" id="btn-open">
+            <img src="images/menu-black-18dp.svg" alt="menu" />
+        </button>
+        <nav class="menu">
+            <div>
+                <button type="button" id="btn-close" data-close="menu">
+                    <img src="images/close-black-18dp.svg" alt="close" />
+                </button>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/our-history.html">Nossa História</a></li>
+                    <li><a href="/gallery.html">Galeria</a></li>
+                    <li><a href="/contact.html">Contato</a></li>
+                </ul>
+            </div>
+            <button type="button" class="btn-register">
+                Registre-se / Login
+            </button>
+        </nav>
+    </header>
+    <main id="error" class="page">
+        
+        <hr class="italy" />
+
+        <header>
+            <h1>Problema ocorrido no <span>Mobi</span>le!</h1>
+        </header>
+
+        <p>Tente novamente mais tarde.</p>
+
+        <picture>
+            <source srcset="images/mobi@2x.png" media="(min-width: 480px)"  />
+            <img src="images/mobi.png" alt="Mobi" />
+        </picture>
+
+    </main>
+    <footer id="footer">
+        <button type="button">
+            <img src="images/icon-arrow-up.svg" alt="up" />
+        </button>
+        <ul>
+            <li class="title">Contato</li>
+            <li>E-mail: support@ferrari.it</li>
+            <li class="social">
+                <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+                <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+            </li>
+        </ul>
+        <a href="/"><img src="images/ferrari-footer.svg" alt="Logo" class="logo" /></a>
+        <p>2020 © Hcode. All rights reserved.</p>
+    </footer>
+    <script type="text/javascript" src="javascript/index.js"></script>
+</body>
+</html>
