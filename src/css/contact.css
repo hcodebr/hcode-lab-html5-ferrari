@@ -68,7 +68,8 @@
 }
 
 #contact.page .contacts {
-    margin: 30px 0;
+    margin: 0;
+    margin-top: 30px;
     padding: 1em;
     flex-direction: column;
 }
@@ -81,6 +82,7 @@
     padding: 1em;
     margin-bottom: 4em;
     text-align: center;
+    color: var(--gray6);
 }
 
 #contact.page .contacts li img {
@@ -92,11 +94,15 @@
 }
 
 #contact.page .contacts li h3 {
-    mar
+    font-weight: 600;
+    margin: 0;
+    font-size: 24px;
 }
 
 #contact.page .contacts li p {
-
+    font-weight: 300;
+    margin: 0;
+    font-size: 25px;
 }
 
 
