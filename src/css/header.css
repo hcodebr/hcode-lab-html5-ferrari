@@ -1,7 +1,7 @@
 #header {
     min-width: 320px;
     width: 100%;
-    height: 80px;
+    height: 60px;
     background-color: var(--header);
     position: relative;
     z-index: 3;
@@ -67,18 +67,6 @@ header #logo {
     right: calc(50vw - 60px);
     top: 15px;
     z-index: 5;
-}
-
-header hr {
-    background-image: url('/images/bg-italy.svg');
-    background-repeat: repeat-x;
-    width: 100%;
-    height: 20px;
-    margin: 0;
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    border: none;
 }
 
 .open-menu {

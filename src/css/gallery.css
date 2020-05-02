@@ -1,0 +1,9 @@
+#gallery.page header {
+    background-image: url('/images/header-gallery.png');
+}
+
+@media (min-width: 576px) {
+    #gallery.page header {
+        background-image: url('/images/header-gallery@2x.png');
+    }
+}

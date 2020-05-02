@@ -4,6 +4,11 @@
 @import 'header.css';
 @import 'footer.css';
 @import 'home.css';
+@import 'our-story.css';
+@import 'contact.css';
+@import 'login.css';
+@import 'register.css';
+@import 'gallery.css';
 
 @media (min-width: 576px) {
 

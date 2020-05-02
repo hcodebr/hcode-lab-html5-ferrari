@@ -1,0 +1,9 @@
+#our-story.page header {
+    background-image: url('/images/header-our-story.png');
+}
+
+@media (min-width: 576px) {
+    #our-story.page header {
+        background-image: url('/images/header-our-story@2x.png');
+    }
+}

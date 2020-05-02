@@ -14,6 +14,44 @@ body {
     font-weight: 400;
 }
 
+hr.italy {
+    background-image: url('/images/bg-italy.svg');
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 20px;
+    margin: 0;
+    border: none;
+}
+
 main {
     min-height: calc(100vh - 468px);
+}
+
+.page {
+    flex-direction: column;
+}
+.page header {
+    height: 210px;
+    width: 100%;
+    background-size: cover;
+}
+
+.page header .mask {
+    width: 100%;
+    background-color: var(--black50);
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--white);
+    padding: 1em;
+}
+.page header ul,
+.page header li, 
+.page header h1 {
+    margin: 0;
+    padding: 0;
+}
+@media (min-width: 576px) {
+    .page header {
+        height: 45vh;
+    }
 }

@@ -1,0 +1,9 @@
+#login.page header {
+    background-image: url('/images/header-login.png');
+}
+
+@media (min-width: 576px) {
+    #login.page header {
+        background-image: url('/images/header-login@2x.png');
+    }
+}
