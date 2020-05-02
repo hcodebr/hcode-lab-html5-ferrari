@@ -1,0 +1,77 @@
+#our-history.page header {
+    background-image: url('/images/header-our-history.png');
+}
+
+#our-history.page .columns {
+    flex-direction: column;
+    padding: 16px;
+}
+
+#our-history.page .column {
+    flex-direction: column;
+}
+
+#our-history.page .column h2 {
+    margin: 0;
+    margin-top: .75em;
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--gray5);
+}
+
+#our-history.page .column h2.green {
+    border-bottom-color: var(--green);
+}
+
+#our-history.page .column h2.gray {
+    border-bottom-color: var(--grayC);
+}
+
+#our-history.page .column h2.red {
+    border-bottom-color: var(--red);
+}
+
+#our-history.page p {
+    margin: 0;
+    font-size: 18px;
+    color: var(--gray5);
+    margin-bottom: 1em;
+}
+
+#our-history.page figure {
+    margin: 0;
+    flex-direction: column;
+}
+
+#our-history.page figure img {
+    width: 100%;
+}
+
+#our-history.page figcaption {
+    width: 100%;
+    color: var(--gray6);
+    font-size: 35px;
+    padding: 16px;
+    font-weight: bold;
+}
+
+#our-history.page figcaption small {
+    font-size: 30px;
+    display: block;
+    font-weight: 400;
+}
+
+#our-history.page .text {
+    padding: 0 16px;
+    flex-direction: column;
+}
+
+@media (min-width: 576px) {
+    #our-history.page header {
+        background-image: url('/images/header-our-history@2x.png');
+    }
+}
