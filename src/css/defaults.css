@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure {
+body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure, picture {
     display: flex;
 }
 
@@ -18,7 +18,7 @@ hr.italy {
     background-image: url('/images/bg-italy.svg');
     background-repeat: repeat-x;
     width: 100%;
-    height: 20px;
+    height: 18px;
     margin: 0;
     border: none;
 }
