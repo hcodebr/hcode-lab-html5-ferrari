@@ -2,6 +2,17 @@
     background-image: url('/images/header-login.png');
 }
 
+#login.page .fields {
+    flex-direction: column;
+}
+
+#login.page p {
+    font-weight: 600;
+    color: var(--gray6);
+    text-align: center;
+    margin: 2em 0;
+}
+
 @media (min-width: 576px) {
     #login.page header {
         background-image: url('/images/header-login@2x.png');

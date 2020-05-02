@@ -6,61 +6,6 @@
     flex-direction: column;
 }
 
-#contact.page form {
-    flex-direction: column;
-    padding: 1em;
-    width: 100%;
-}
-
-#contact.page form .field {
-    position: relative;
-    border: var(--grayC) 2px solid;
-    border-radius: 5px;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 1em;
-    padding: 10px;
-}
-
-#contact.page form .field label {
-    color: var(--grayC);
-    font-size: 14px;
-}
-
-#contact.page form .field input,
-#contact.page form .field textarea {
-    line-height: 1.5em;
-    padding: .25em 0;
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--gray5);
-    border: none;
-    outline: none;
-    font-family: 'Open Sans';
-}
-
-#contact.page form button {
-    width: 100%;
-    background-color: var(--green);
-    color: var(--white);
-    border: none;
-    padding: .5em 1em;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 5px;
-    outline: none;
-}
-
-#contact.page form button:hover {
-    background-color: var(--green-hover);
-}
-
-#contact.page form button:active {
-    background-color: var(--green-active);
-}
-
 #contact.page #map {
     background-image: url('/images/map.jpg');
     height: 263px;

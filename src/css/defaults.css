@@ -50,6 +50,69 @@ main {
     margin: 0;
     padding: 0;
 }
+
+form {
+    flex-direction: column;
+    padding: 1em;
+    width: 100%;
+}
+
+form .field {
+    position: relative;
+    border: var(--grayC) 2px solid;
+    border-radius: 5px;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 10px;
+}
+
+form .field label {
+    color: var(--grayC);
+    font-size: 14px;
+}
+
+form .field input,
+form .field textarea {
+    line-height: 1.5em;
+    padding: .25em 0;
+    font-size: 14px;
+    color: var(--gray5);
+    border: none;
+    outline: none;
+    font-family: 'Open Sans';
+}
+
+form button {
+    width: 100%;
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    padding: .5em 1em;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+}
+
+form button:hover {
+    background-color: var(--green-hover);
+}
+
+form button:active {
+    background-color: var(--green-active);
+}
+
+a {
+    color: var(--red);
+}
+a:hover {
+    color: var(--black);
+}
+
 @media (min-width: 576px) {
     .page header {
         height: 45vh;
