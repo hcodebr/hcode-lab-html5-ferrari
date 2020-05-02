@@ -1,3 +1,20 @@
 #register.page header {
     background-image: url('/images/header-register.png');
 }
+
+#register.page .fields {
+    flex-direction: column;
+}
+
+#register.page p {
+    font-weight: 600;
+    color: var(--gray6);
+    text-align: center;
+    margin: 2em 0;
+}
+
+@media (min-width: 576px) {
+    #register.page header {
+        background-image: url('/images/header-register@2x.png');
+    }
+}
