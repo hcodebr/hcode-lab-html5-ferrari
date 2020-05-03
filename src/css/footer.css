@@ -76,3 +76,30 @@
     font-size: 18px;
     font-weight: bold;
 }
+
+@media (min-width: 1200px) {
+    #footer {
+        padding-bottom: 0;
+    }
+    #footer .columns {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #footer .links {
+        display: flex;
+    }
+    #footer li {
+        font-size: 14px;
+        font-weight: 300;
+    }
+    #footer .links a {
+        color: var(--white50);
+        text-decoration: none;
+    }
+    #footer .links a:hover {
+        color: var(--white);
+    }
+    #footer p {
+        font-size: 14px;
+    }
+}
