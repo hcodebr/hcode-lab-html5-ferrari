@@ -86,11 +86,18 @@
     text-transform: uppercase;
     margin: 1em 0;
 }
+#home .inspiration .text h2 span,
+#home .inspiration .text hr {
+    display: none;
+}
 #home .inspiration .text p {
     color: var(--gray5);
     text-align: right;
     max-width: 75vw;
     font-size: 24px;
+}
+#home .inspiration .text .complete {
+    display: none;
 }
 #home .inspiration .car {
     position: absolute;
@@ -127,4 +134,122 @@
 }
 #home .know img {
     width: 194px;
+}
+#home .know-1 p,
+#home .know-1 a,
+#home .know-2 {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    #home .gallery {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1200px) {
+    #home {
+        margin-top: -100px;
+    }
+    #home hr {
+        top: 100px;
+    }
+    #home header {
+        height: 100vh;
+        max-height: initial;
+        background-image: url('/images/photos/sf90_stradale.jpg@2x.png');
+    }
+    #home .inspiration {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    #home .inspiration > div {
+        flex: 1;
+    }
+    #home .inspiration .car {
+        left: -150px;        
+    }
+    #home .inspiration .text {
+        align-items: flex-start;
+    }
+    #home .inspiration .text h2 {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: left;
+        margin: 0;
+    }
+    #home .inspiration .text hr {
+        position: static;
+        display: flex;
+        width: 100px;
+        height: 2px;
+        border: none;
+        background-color: var(--gray3);
+        margin: 1em 0;
+    }
+    #home .inspiration .text h2 span {
+        display: flex;
+    }
+    #home .inspiration .text p {
+        font-size: 18px;
+        text-align: left;
+    }
+    #home .inspiration .text .complete {
+        display: block;
+    }
+    #home .know {
+        flex-direction: row;
+        color: var(--gray5);
+    }
+    #home .know-1,
+    #home .know-2,
+    #home > img {
+        flex: 1;
+    }
+    #home .know-1 {
+        flex-direction: column;
+    }
+    #home .know-1 p,
+    #home .know-1 a,
+    #home .know-2 {
+        display: flex;
+    }
+    #home .know-1 h1 {
+        font-size: 60px;
+        font-weight: bold;
+        text-align: left;
+        margin: 0;
+    }
+    #home .know-1 p {
+        color: var(--gray5);
+        margin-bottom: 2em;
+    }
+    #home .know-1 a {
+        border: var(--gray6) 1px solid;
+        padding: .75em 0;
+        border-radius: 10px;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: var(--gray6);
+        max-width: 200px;
+    }
+    #home .know img {
+        margin: 0 6em;
+    }
+    #home .know-2 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-self: stretch;
+    }
+    #home .know-2 dt {
+        font-weight: bold;
+        margin: 1em 0;
+        font-size: 22px;
+    }
+    #home .know-2 dd {
+        margin: 0;
+        font-size: 16px;
+    }
 }
