@@ -61,7 +61,7 @@
     right: 0;
 }
 
-header #logo {
+#header #logo {
     position: absolute;
     transition: all 1s ease-in-out;
     right: calc(50vw - 60px);
@@ -95,4 +95,52 @@ header #logo {
 .open-menu #header #logo {
     left: initial;
     right: 87px;
+}
+
+@media (min-width: 1200px) {
+    #header {
+        height: 100px;
+    }
+    #header #logo {
+        right: calc(100vw - 200px);
+        top: 17px;
+    }
+    #btn-open, #btn-close {
+        display: none;
+    }
+    #header .menu {
+        width: 100%;
+        height: initial;
+        background-color: initial;
+        position: static;
+        right: initial;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 200px;
+    }
+    #header .menu > div {
+        width: 100%;
+    }
+    #header .menu ul {
+        margin: 0;
+        margin-top: 0;
+        padding: 0;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+    #header .menu ul li {
+        flex: 1;
+        max-width: 200px;
+    }
+    #header .menu ul li a {
+        font-size: 1.25em;
+    }
+    #header .menu ul li a:hover {
+        color: var(--black);
+    }
+    #header .menu .btn-register {
+        min-width: 276px;
+        margin: 1.55em;
+    }
 }
