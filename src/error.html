@@ -34,16 +34,24 @@
         
         <hr class="italy" />
 
-        <header>
-            <h1>Problema ocorrido no <span>Mobi</span>le!</h1>
-        </header>
-
-        <p>Tente novamente mais tarde.</p>
-
-        <picture>
-            <source srcset="images/mobi@2x.png" media="(min-width: 480px)"  />
-            <img src="images/mobi.png" alt="Mobi" />
-        </picture>
+        <div class="columns">
+            <div class="column">
+                <header>
+                    <h1>
+                        <span class="show-desktop"><b>Uno</b>&nbsp;problema ocorrido!</span>
+                        <span class="hide-desktop">Problema ocorrido no <b>Mobi</b>le!</span>
+                    </h1>
+                </header>        
+                <p>Tente novamente mais tarde.</p>
+            </div>
+            <div class="column">
+                <picture>
+                    <source srcset="images/uno.png" media="(min-width: 1200px)"  />
+                    <source srcset="images/mobi@2x.png" media="(min-width: 480px)"  />
+                    <img src="images/mobi.png" alt="Mobi" />
+                </picture>
+            </div>
+        </div>
 
     </main>
     <footer id="footer">

@@ -13,7 +13,7 @@
     line-height: 1.5em;
 }
 
-#error.page header h1 span {
+#error.page header h1 b {
     color: var(--red);
 }
 
@@ -26,4 +26,33 @@
 #error.page img {
     width: 100%;
     margin-bottom: 3em;
+}
+
+#error.page .columns,
+#error.page .column {
+    flex-direction: column;
+}
+
+@media (min-width: 576px) {
+    #error.page header {
+        height: initial;
+        min-height: initial;
+        width: 100%;
+    }  
+}
+
+@media (min-width: 1200px) {
+    #error.page p {
+        font-size: 16px;
+    }
+    #error.page .columns {
+        flex-direction: row;
+        align-items: center;
+    }
+    #error.page .column {
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        height: calc(100vh - 396px);
+    }
 }
