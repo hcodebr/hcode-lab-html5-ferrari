@@ -2,10 +2,6 @@
     background-image: url('/images/header-register.png');
 }
 
-#register.page .fields {
-    flex-direction: column;
-}
-
 #register.page p {
     font-weight: 600;
     color: var(--gray6);
@@ -13,8 +9,72 @@
     margin: 2em 0;
 }
 
+#register.page section form > div {
+    width: 100%;
+    flex-direction: column;
+}
+
+#register.page section .image {
+    display: none;
+}
+
 @media (min-width: 576px) {
     #register.page header {
         background-image: url('/images/header-register@2x.png');
+    }
+}
+
+@media (min-width: 1200px) {
+    #register.page {
+        position: relative;
+    }
+    #register.page section {
+        flex-direction: row;
+        height: calc(100vh - 396px);
+    }
+    #register.page section .image,
+    #register.page section form {
+        flex: 1;
+        width: initial;
+        display: flex;
+    }
+    #register.page section form {
+        padding: 30px;
+        padding-top: 150px;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    #register.page section form p {
+        text-align: left;
+    }
+    #register.page section .image {
+        background-image: url('/images/header-register@3x.png');
+        background-size: cover;
+        align-self: stretch;
+    }
+    #register.page header {
+        background: none;
+        position: absolute;
+        left: 50vw;
+        top: 110px;
+        z-index: 3;
+        width: initial;
+        height: initial;
+        min-height: 55px;
+    }
+    #register.page header .mask {
+        justify-content: flex-start;
+        color: var(--green);
+        padding: 0;
+        border-bottom: var(--red) 4px solid;
+        width: 50px;
+        position: relative;
+    }
+    #register.page header h1 {
+        color: var(--green);
+        font-size: 32px;
+        text-shadow: none;
+        position: absolute;
+        width: 100%;
     }
 }
