@@ -2,10 +2,6 @@
     background-image: url('/images/header-login.png');
 }
 
-#login.page .fields {
-    flex-direction: column;
-}
-
 #login.page p {
     font-weight: 600;
     color: var(--gray6);
@@ -13,8 +9,72 @@
     margin: 2em 0;
 }
 
+#login.page section form > div {
+    width: 100%;
+    flex-direction: column;
+}
+
+#login.page section .image {
+    display: none;
+}
+
 @media (min-width: 576px) {
     #login.page header {
         background-image: url('/images/header-login@2x.png');
+    }
+}
+
+@media (min-width: 1200px) {
+    #login.page {
+        position: relative;
+    }
+    #login.page section {
+        flex-direction: row;
+        height: calc(100vh - 396px);
+    }
+    #login.page section .image,
+    #login.page section form {
+        flex: 1;
+        width: initial;
+        display: flex;
+    }
+    #login.page section form {
+        padding: 30px;
+        padding-top: 150px;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    #login.page section form p {
+        text-align: left;
+    }
+    #login.page section .image {
+        background-image: url('/images/header-login@3x.png');
+        background-size: cover;
+        align-self: stretch;
+    }
+    #login.page header {
+        background: none;
+        position: absolute;
+        left: 50vw;
+        top: 110px;
+        z-index: 3;
+        width: initial;
+        height: initial;
+        min-height: 55px;
+    }
+    #login.page header .mask {
+        justify-content: flex-start;
+        color: var(--green);
+        padding: 0;
+        border-bottom: var(--red) 4px solid;
+        width: 50px;
+        position: relative;
+    }
+    #login.page header h1 {
+        color: var(--green);
+        font-size: 32px;
+        text-shadow: none;
+        position: absolute;
+        width: 100%;
     }
 }

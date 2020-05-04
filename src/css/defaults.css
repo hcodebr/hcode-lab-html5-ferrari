@@ -91,6 +91,17 @@ form .field textarea {
     font-family: 'Open Sans';
 }
 
+form .actions {
+    flex-direction: column;
+    align-content: center;
+}
+form .actions a {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    color: var(--gray6);
+}
+
 form button {
     width: 100%;
     background-color: var(--green);
@@ -157,19 +168,29 @@ a:hover {
     form .fields .field:last-child {
         margin-right: 0;
     }
-}
-
-@media (min-width: 1200px) {
-    .show-desktop {
-        display: flex;
+    form .actions {
+        flex-direction: row;
+        justify-content: space-between;
     }
-    .hide-desktop {
-        display: none;
+    form .actions a {
+        text-align: right;
     }
     form .field textarea {
         min-height: 250px;
     }
     form button {
         max-width: 340px;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        min-height: calc(100vh - 378px);
+    }
+    .show-desktop {
+        display: flex;
+    }
+    .hide-desktop {
+        display: none;
     }
 }
