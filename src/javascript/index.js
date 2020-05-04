@@ -1,8 +1,9 @@
 const body = document.querySelector('body')
-const btOpen = document.getElementById('btn-open')
+const btnOpen = document.getElementById('btn-open')
 const closeMenu = document.querySelectorAll('[data-close="menu"]')
+const btnLogin = document.querySelector('.btn-register')
 
-btOpen.addEventListener('click', e => {
+btnOpen.addEventListener('click', e => {
     body.classList.add('open-menu')
 })
 
@@ -12,4 +13,8 @@ closeMenu.forEach(el => {
         body.classList.remove('open-menu')
     })
     
+})
+
+btnLogin.addEventListener('click', e => {
+    window.location.href = '/login.html'
 })

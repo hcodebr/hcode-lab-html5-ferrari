@@ -144,3 +144,9 @@
         margin: 1.55em;
     }
 }
+
+@media (min-width: 1200px) {
+    #header #logo {
+        transition: none;
+    }   
+}
