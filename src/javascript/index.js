@@ -18,3 +18,10 @@ closeMenu.forEach(el => {
 btnLogin.addEventListener('click', e => {
     window.location.href = '/login.html'
 })
+
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 44.531274, lng: 10.868766},
+      zoom: 14
+    });
+}
