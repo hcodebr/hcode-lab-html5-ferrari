@@ -61,6 +61,10 @@ form {
     width: 100%;
 }
 
+form .fields {
+    flex-direction: column;
+}
+
 form .field {
     position: relative;
     border: var(--grayC) 2px solid;
@@ -117,6 +121,10 @@ a:hover {
     color: var(--black);
 }
 
+.show-desktop {
+    display: none;
+}
+
 @media (min-width: 576px) {
     .page header {
         height: 20vw;
@@ -139,5 +147,29 @@ a:hover {
     .page header .mask h1 {
         font-size: 100px;
         text-shadow: 0 3px 6px var(--black15);
+    }
+    form .fields {
+        flex-direction: row;
+    }
+    form .fields .field {
+        margin-right: 1em;
+    }
+    form .fields .field:last-child {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .show-desktop {
+        display: flex;
+    }
+    .hide-desktop {
+        display: none;
+    }
+    form .field textarea {
+        min-height: 250px;
+    }
+    form button {
+        max-width: 340px;
     }
 }

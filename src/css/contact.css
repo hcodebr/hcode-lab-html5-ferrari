@@ -50,10 +50,50 @@
     font-size: 25px;
 }
 
-
-
 @media (min-width: 576px) {
     #contact.page header {
         background-image: url('/images/header-contact@2x.png');
     }
 }
+
+@media (min-width: 992px) {
+    #contact.page header {
+        background-image: url('/images/header-contact@3x.png');
+        background-position: 0px -22vw;
+    }
+
+    #contact.page > section {
+        flex-direction: row;
+    }
+    
+    #contact.page > section form,
+    #contact.page > section #map {
+        flex: 1;
+    }
+    #contact.page > section #map {
+        margin: 1em;
+        margin-left: 0;
+    }
+    #contact.page .contacts {
+        flex-direction: row;
+    }
+    #contact.page .contacts li {
+        margin-right: 1em;
+    }
+    #contact.page .contacts li:last-child {
+        margin-right: 0;
+    }
+    #contact.page hr {
+        background-color: var(--grayC);
+        height: 1px;
+        width: calc(100% - 2em);
+        margin: 3em 0;
+        border: none;
+        display: flex;
+        align-self: center;
+    }
+    #contact.page .contacts li {
+        margin-bottom: 2em;
+    }
+}
+
