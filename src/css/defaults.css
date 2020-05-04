@@ -30,6 +30,10 @@ main {
 .page {
     flex-direction: column;
 }
+.page .page-header {
+    width: 100%;
+    flex-direction: column;
+}
 .page header {
     height: 210px;
     width: 100%;
@@ -115,6 +119,25 @@ a:hover {
 
 @media (min-width: 576px) {
     .page header {
-        height: 45vh;
+        height: 20vw;
+        min-height: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    .page .page-header {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .page header .mask {
+        background-color: transparent;
+        align-items: flex-end;
+    }
+    .page header .mask li {
+        font-size: 30px;
+    }
+    .page header .mask h1 {
+        font-size: 100px;
+        text-shadow: 0 3px 6px var(--black15);
     }
 }

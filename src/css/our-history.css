@@ -70,8 +70,52 @@
     flex-direction: column;
 }
 
+#our-history.page .ceo {
+    flex-direction: column;
+}
+
 @media (min-width: 576px) {
     #our-history.page header {
         background-image: url('/images/header-our-history@2x.png');
+    }
+}
+
+@media (min-width: 992px) {
+    #our-history.page .columns {
+        flex-direction: row;
+    }
+    #our-history.page .column {
+        margin: 4em;
+    }
+    #our-history.page header {
+        background-image: url('/images/header-our-history@3x.png');
+        background-position: 0px -24vw;
+    }
+    #our-history.page .ceo {
+        flex-direction: row;
+    }
+    #our-history.page .ceo > figure,
+    #our-history.page .ceo > section {
+        flex: 1;
+    }
+    #our-history.page .ceo .text {
+        margin-top: 150px;
+    }
+    #our-history.page .ceo .text p {
+        margin-left: 35px;
+    }
+    #our-history.page .ceo > figure {
+        position: relative;
+    }
+    #our-history.page .ceo figcaption {
+        position: absolute;
+        top: 0;
+        right: -50vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    #our-history.page header {
+        background-position: 0px -30vw;
     }
 }
