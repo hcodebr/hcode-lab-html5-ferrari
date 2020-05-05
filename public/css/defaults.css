@@ -80,6 +80,7 @@ form .field label {
     z-index: 2;
     left: 10px;
     top: 10px;
+    transition: color .3s ease-in-out;
 }
 
 form .field input,
@@ -97,6 +98,7 @@ form .field textarea {
     position: relative;
     z-index: 1;
     top: 0;
+    transition: border-color .3s ease-in-out;
 }
 
 form .field input:focus,
