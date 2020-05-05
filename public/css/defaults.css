@@ -68,28 +68,45 @@ form .fields {
 
 form .field {
     position: relative;
-    border: var(--grayC) 2px solid;
-    border-radius: 5px;
     flex-direction: column;
     width: 100%;
     margin-bottom: 1em;
-    padding: 10px;
 }
 
 form .field label {
     color: var(--grayC);
     font-size: 14px;
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    top: 10px;
 }
 
 form .field input,
 form .field textarea {
     line-height: 1.5em;
-    padding: .25em 0;
+    padding: 10px;
+    padding-top: 30px;
     font-size: 14px;
     color: var(--gray5);
     border: none;
     outline: none;
     font-family: 'Open Sans';
+    border: var(--grayC) 2px solid;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+}
+
+form .field input:focus,
+form .field textarea:focus {
+    border-color: var(--green);
+}
+
+form .field input:focus + label,
+form .field textarea:focus + label {
+    color: var(--green);
 }
 
 form .actions {
