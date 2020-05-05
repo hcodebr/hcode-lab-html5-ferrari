@@ -25,6 +25,11 @@
     align-items: center;
     top: -35px;
     z-index: 1;
+    cursor: pointer;
+}
+
+#footer button:hover {
+    background-color: var(--white);
 }
 
 #footer .columns {

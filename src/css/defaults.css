@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure, picture {

@@ -2,6 +2,15 @@ const body = document.querySelector('body')
 const btnOpen = document.getElementById('btn-open')
 const closeMenu = document.querySelectorAll('[data-close="menu"]')
 const btnLogin = document.querySelector('.btn-register')
+const btnFooter = document.querySelector('#footer button')
+
+console.log(btnFooter)
+
+btnFooter.addEventListener('click', e => {
+
+    window.scrollTo(0, 0)
+
+})
 
 btnOpen.addEventListener('click', e => {
     body.classList.add('open-menu')
