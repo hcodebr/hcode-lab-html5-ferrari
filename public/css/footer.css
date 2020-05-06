@@ -108,3 +108,17 @@
         font-size: 14px;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    #footer, #footer .links a {
+        color: var(--black50);
+    }
+    #footer .links a:hover {
+        color: var(--black);
+    }
+    #footer button {
+        background: var(--black50);
+        color: var(--light);
+        box-shadow: var(--white) 0 3px 6px;
+    }
+}

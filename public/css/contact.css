@@ -83,7 +83,7 @@
     #contact.page .contacts li:last-child {
         margin-right: 0;
     }
-    #contact.page hr {
+    #contact.page hr.divider {
         background-color: var(--grayC);
         height: 1px;
         width: calc(100% - 2em);
@@ -97,3 +97,12 @@
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    #contact.page .contacts li img {
+        background-color: var(--light);
+    }
+    #contact.page .contacts li {
+        border: var(--black50) 1px solid;
+        color: var(--black50);
+    }
+}

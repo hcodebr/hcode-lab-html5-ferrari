@@ -1,4 +1,5 @@
 :root {
+    --bg-color: #FFF;
     --black: #000;
     --white: #FFF;
     --red: #E32119;
@@ -17,4 +18,23 @@
     --gray5: #555;
     --gray6: #666;
     --grayC: #CCC;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #35363A;
+        --black: #FFF;
+        --white: #000;
+        --dark: #202124;
+        --light: #35363A;
+        --header: #202124;
+        --white50: #00000050;
+        --black75: rgba(255, 255, 255, .75);
+        --black50: rgba(255, 255, 255, .5);
+        --black15: rgba(255, 255, 255, .15);
+        --gray3: #CCC;
+        --gray5: #999;
+        --gray6: #777;
+        --grayC: #333;
+    }
 }

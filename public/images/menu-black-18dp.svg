@@ -1,4 +1,14 @@
 <svg id="menu-black-18dp" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <style>
+  #Caminho_216 {
+    fill: #000;
+  }
+  @media(prefers-color-scheme: dark){
+    #Caminho_216 {
+      fill: #FFF;
+    }
+  }
+  </style>
   <path id="Caminho_215" data-name="Caminho 215" d="M0,0H32V32H0Z" fill="none"/>
   <path id="Caminho_216" data-name="Caminho 216" d="M3,18H29V16H3Zm0-5H29V11H3ZM3,6V8H29V6Z" transform="translate(0 4)"/>
 </svg>

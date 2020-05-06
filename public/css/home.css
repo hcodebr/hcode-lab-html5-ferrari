@@ -253,3 +253,22 @@
         font-size: 16px;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    #home header h1 {
+        color: var(--black);
+    }
+    #home header a {
+        border: var(--black) 2px solid;
+        color: var(--black);
+    }
+    #home .inspiration {
+        padding: 0;
+    }
+    #home .inspiration > div:first-child {
+        background-color: var(--black);
+    }
+    #home .inspiration .text {
+        padding: 3em;
+    }
+}

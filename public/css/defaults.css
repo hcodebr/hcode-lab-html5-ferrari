@@ -13,6 +13,7 @@ body {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
+    background-color: var(--bg-color);
 }
 
 hr.italy {
@@ -90,7 +91,6 @@ form .field textarea {
     padding-top: 30px;
     font-size: 14px;
     color: var(--gray5);
-    border: none;
     outline: none;
     font-family: 'Open Sans';
     border: var(--grayC) 2px solid;
@@ -212,5 +212,29 @@ a:hover {
     }
     .hide-desktop {
         display: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .page header .mask {
+        background-color: var(--white50);
+    }
+    form .field label {
+        color: var(--gray6);
+    }
+    form .field input,
+    form .field textarea {
+        background-color: var(--bg-color);
+        border: var(--gray6) 2px solid;
+        color: var(--gray3);
+    }
+    form button {
+        color: var(--black);
+    }
+    .page header .mask {
+        color: var(--black);
+    }
+    .page header .mask h1 {
+        text-shadow: 0 3px 6px var(--dark);
     }
 }
