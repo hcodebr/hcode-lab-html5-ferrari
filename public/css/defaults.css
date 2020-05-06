@@ -40,16 +40,13 @@ main {
     height: 210px;
     width: 100%;
     background-size: cover;
-}
-
-.page header .mask {
-    width: 100%;
-    background-color: var(--black50);
+    filter: brightness(0.5);
     flex-direction: column;
     justify-content: flex-end;
     color: var(--white);
     padding: 1em;
 }
+
 .page header ul,
 .page header li, 
 .page header h1 {
@@ -168,14 +165,14 @@ a:hover {
         width: 100%;
         flex-direction: column-reverse;
     }
-    .page header .mask {
-        background-color: transparent;
+    .page header  {
+        filter: none;
         align-items: flex-end;
     }
-    .page header .mask li {
+    .page header li {
         font-size: 30px;
     }
-    .page header .mask h1 {
+    .page header h1 {
         font-size: 100px;
         text-shadow: 0 3px 6px var(--black15);
     }
@@ -216,8 +213,9 @@ a:hover {
 }
 
 @media (prefers-color-scheme: dark) {
-    .page header .mask {
+    .page header {
         background-color: var(--white50);
+        color: var(--black);
     }
     form .field label {
         color: var(--gray6);
@@ -231,10 +229,7 @@ a:hover {
     form button {
         color: var(--black);
     }
-    .page header .mask {
-        color: var(--black);
-    }
-    .page header .mask h1 {
+    .page header h1 {
         text-shadow: 0 3px 6px var(--dark);
     }
 }

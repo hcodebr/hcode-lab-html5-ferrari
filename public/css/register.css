@@ -58,11 +58,8 @@
         left: 50vw;
         top: 110px;
         z-index: 3;
-        width: initial;
         height: initial;
         min-height: 55px;
-    }
-    #register.page header .mask {
         justify-content: flex-start;
         color: var(--green);
         padding: 0;
