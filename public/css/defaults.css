@@ -164,7 +164,7 @@ a:hover {
     .page .page-header {
         width: 100%;
         flex-direction: column-reverse;
-        height: 22px;
+        height: 18px;
     }
     .page header  {
         filter: none;
