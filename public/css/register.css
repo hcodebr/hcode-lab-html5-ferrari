@@ -25,12 +25,15 @@
 }
 
 @media (min-width: 1200px) {
+    hr.italy {
+        position: absolute;
+    }
     #register.page {
         position: relative;
     }
     #register.page section {
         flex-direction: row;
-        height: calc(100vh - 396px);
+        min-height: calc(100vh - 396px);
     }
     #register.page section .image,
     #register.page section form {
@@ -54,12 +57,10 @@
     }
     #register.page header {
         background: none;
-        position: absolute;
         left: 50vw;
-        top: 110px;
+        top: 120px;
         z-index: 3;
         height: initial;
-        min-height: 55px;
         justify-content: flex-start;
         color: var(--green);
         padding: 0;
@@ -71,7 +72,10 @@
         color: var(--green);
         font-size: 32px;
         text-shadow: none;
-        position: absolute;
         width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding-bottom: 10px;
     }
 }
